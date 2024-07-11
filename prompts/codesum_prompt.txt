@@ -28,3 +28,5 @@ Additional DOs:
 - Provide reference links to products and services used.
 - Prioritise information in the README.md
 - provide examples of the code with explinations of what it is doing. This doesn't need to include all the code, but choose something interesting.
+
+- If the code repository is empty say so, and don't try to make up a summary
