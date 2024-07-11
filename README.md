@@ -1,6 +1,9 @@
 # Project Overview
 
-This project is a comprehensive solution designed to streamline and enhance the process of generating summaries for code repositories. It leverages a variety of technologies and frameworks to provide a user-friendly interface for inputting repository URLs and receiving detailed, understandable summaries of the code's purpose, functionality, and recent changes.
+The idea behind this project is to create a simple way for developers like you to get a better understanding of what's going on in a repository, without having to dig through mountains of code. Just input a URL, and you'll get a concise summary of the repository's purpose, functionality, and recent changes - all in plain English!
+
+
+This project is still in its early stages, but I'm excited to see where it goes from here. If you're interested in contributing or just want to take a peek at what I've got so far, feel free to dive in and explore the code. Let me know if you have any questions or suggestions - I'd love to hear them!"
 
 ## Features
 
@@ -25,13 +28,26 @@ This project is a comprehensive solution designed to streamline and enhance the 
 
 ### Environmental Variables
 
+Environmental variables are crucial for configuring the application without hard-coding sensitive information, such as API keys and service endpoints, directly into the source code. This approach enhances security and flexibility, allowing for easy adjustments to the application's configuration without the need to modify the codebase. In this project, the environmental variables are defined to configure the integration with Azure's OpenAI services.
+
+To set up these variables:
+
+1. Locate the `example.env` file in the project directory.
+2. Rename `example.env` to [`.env`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fworkspaces%2Fai-code-summary%2F.env%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "/workspaces/ai-code-summary/.env") to make it the active environment file.
+3. Open the [`.env`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fworkspaces%2Fai-code-summary%2F.env%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "/workspaces/ai-code-summary/.env") file and update it with the required information:
+   - `AZURE_OPENAI_API_BASE`: The base URL for the Azure OpenAI API.
+   - `AZURE_OPENAI_DEPLOYMENT`: The specific deployment or resource identifier for your Azure OpenAI instance.
+   - `AZURE_OPENAI_API_KEY`: Your Azure OpenAI API key, used for authenticating requests to the service.
+   - `OPENAI_API_VERSION`: The version of the OpenAI API you are targeting, ensuring compatibility with the features and syntax used in your application.
+
+Ensure that the [`.env`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fworkspaces%2Fai-code-summary%2F.env%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "/workspaces/ai-code-summary/.env") file is never committed to version control to protect your API keys and other sensitive information from exposure.
+
 ```
 # LangChain Azure OpenAI
 AZURE_OPENAI_API_BASE=""
 AZURE_OPENAI_DEPLOYMENT=""
 AZURE_OPENAI_API_KEY="" 
 OPENAI_API_VERSION="2023-05-15"
-
 ```
 
 ## Usage
