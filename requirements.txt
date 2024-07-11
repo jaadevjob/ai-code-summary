@@ -1,0 +1,12 @@
+langchain-openai 
+tiktoken 
+langchain-chroma
+langchain.community
+langchain 
+GitPython 
+python-dotenv
+
+flask
+jsonschema
+markdown
+unstructured
