@@ -25,6 +25,7 @@ This project is still in its early stages, but I'm excited to see where it goes 
 2. Install the required dependencies by running `pip install -r requirements.txt`.
 3. Set up the environment variables as specified in the `.env` file template.
 4. Run the Flask application using `python app.py`.
+You can also create .venv
 
 ### Environmental Variables
 
